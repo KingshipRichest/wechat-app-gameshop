@@ -1,0 +1,49 @@
+/**index.wxss**/
+.nx_swiper swiper{
+  width: 750rpx;
+  height: 400rpx;
+}
+.nx_swiper swiper image{
+  width: 750rpx;
+  height: 400rpx;
+}
+
+.cates{
+  height: 100%;
+}
+
+.cates .cates_container{
+  display: flex;
+  margin-top: 20rpx;
+}
+
+.cates .cates_container .left_menu{
+  flex:1;
+}
+
+.cates .cates_container .left_menu .menu_item{
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.cates .cates_container .left_menu .active{
+  color: rgb(34, 166, 255);
+  border-left: 5rpx solid currentColor;
+}
+
+.cates .cates_container .right_content{
+  flex:5;
+}
+
+.goods_list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods_list navigator{
+  text-align: center;
+  padding: 15rpx;
+}

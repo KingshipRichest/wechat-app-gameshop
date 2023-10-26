@@ -1,0 +1,28 @@
+<view class="index">
+<!-- 搜索 -->
+  <view class="nx_congar">
+    <input class="input" auto-focus="true" bindinput="search" placeholder="请输入商品名称"/>
+  </view>
+
+
+
+<!--本站商品开始 -->
+<view class="nx_line">
+    <view class="nx_line_list">
+      <navigator class="nx_line_item" wx:for="{{goodsInfoGoodsList}}" wx:for-item="item" wx:key="id" url="/pages/goodsInfo/index?id={{item.id}}">
+        <view style="flex: 1;">
+          <image style="height: 260rpx;" mode="scaleToFill" src="{{item.url}}"></image>
+        </view>
+        <view style="flex: 1;position: relative;padding: 0 30rpx;">
+          <view class="nx_item_name">{{item.name}}</view>
+          <view class="max-height: 10rpx">{{item.descriptionView}}</view>
+          <view style="position: absolute;bottom: 10rpx;">
+            <text style="color: red;">￥{{item.price}}</text>
+            <text style="margin-left: 30rpx;">已销{{item.sales}}件</text>
+          </view>
+        </view>
+      </navigator>
+    </view>
+  </view>
+<!-- 本站商品结束 -->
+</view>

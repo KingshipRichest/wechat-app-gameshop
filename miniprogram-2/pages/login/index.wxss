@@ -1,0 +1,6 @@
+.login_title{
+    font-size: 40rpx;
+    text-align: center;
+    color: red;
+    margin: 60rpx;
+}
