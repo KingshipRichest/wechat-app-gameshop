@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.javaclimb.mapper.GoodsInfoMapper">
+
+    <select id="findByName" resultType="com.javaclimb.entity.GoodsInfo">
+        select *,
+        (select ty.name from type_info ty where ty.id=g.typeId) typeName,
+        (select u.name from user_info u where u.id=g.userId) userName
+        from goods_info g where 1=1
+        <if test="name != null and name != 'all' and name !=''">
+            and g.`name` like concat('%',#{name},'%')
+        </if>
+        <if test="id != null and id !=''">
+            and g.`id` = #{id}
+        </if>
+    </select>
+</mapper>
