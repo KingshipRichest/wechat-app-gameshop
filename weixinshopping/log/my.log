@@ -1,0 +1,18 @@
+2023-10-26 18:12:10.227  INFO 9856 --- [main] com.javaclimb.XshoppingApplication       : Starting XshoppingApplication using Java 1.8.0_333 on LRLF18 with PID 9856 (F:\github\xshopping\target\classes started by 14336 in F:\github\xshopping)
+2023-10-26 18:12:10.243  INFO 9856 --- [main] com.javaclimb.XshoppingApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-10-26 18:12:10.774  WARN 9856 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.javaclimb]' package. Please check your configuration.
+2023-10-26 18:12:11.149  INFO 9856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-26 18:12:11.149  INFO 9856 --- [main] o.a.catalina.core.AprLifecycleListener   : Loaded Apache Tomcat Native library [1.2.35] using APR version [1.7.0].
+2023-10-26 18:12:11.164  INFO 9856 --- [main] o.a.catalina.core.AprLifecycleListener   : APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-10-26 18:12:11.164  INFO 9856 --- [main] o.a.catalina.core.AprLifecycleListener   : APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-10-26 18:12:11.164  INFO 9856 --- [main] o.a.catalina.core.AprLifecycleListener   : OpenSSL successfully initialized [OpenSSL 1.1.1q  5 Jul 2022]
+2023-10-26 18:12:11.180  INFO 9856 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-26 18:12:11.180  INFO 9856 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-10-26 18:12:11.289  INFO 9856 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-26 18:12:11.289  INFO 9856 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 984 ms
+2023-10-26 18:12:11.352  INFO 9856 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2023-10-26 18:12:11.430  INFO 9856 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-10-26 18:12:12.211  INFO 9856 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-26 18:12:12.227  INFO 9856 --- [main] com.javaclimb.XshoppingApplication       : Started XshoppingApplication in 2.441 seconds (JVM running for 3.327)
+2023-10-26 18:12:18.522  INFO 9856 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-10-26 18:12:18.522  INFO 9856 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
